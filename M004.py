@@ -79,7 +79,7 @@ for i in range(0, 20):
 
 # Übung 1
 # FizzBuzz
-# 1. Schleife schreiben, die von 0 bis inklusive 100 hochzählt
+# 1. Schleife schreiben, die von 1 bis inklusive 100 hochzählt
 # 2. Wir müssen in der Schleife jede Zahl auf ihre Teilbarkeit prüfen:
 # Falls sie durch 3 teilbar ist, soll in der Konsole "Fizz" ausgegeben werden
 # Falls sie durch 5 teilbar ist, soll in der Konsole "Buzz" ausgegeben werden
