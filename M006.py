@@ -112,3 +112,26 @@ addiere(*intList)
 # Die Funktion soll zusätzlich zählen wie viele Sonderzeichen (Nummern inkludiert) enthalten sind und das
 # ebenfalls ausgeben
 # Sonderzeichen: 4 | Groß: 3 | Klein: 12
+
+# Funktion mit String als Parameter
+# 3 Zählervariablen: Groß, Klein, Sonderzeichen
+# Schleife die den String durchgeht -> Einzelne Zeichen anschaut
+# if-elif um zu schauen ob das derzeitige Zeichen Groß/Klein/keins von beiden ist
+# Print der drei Zähler
+# countCase("Das ist der Text") -> 2 Groß, 11 Klein, 3 Sonderzeichen
+def countCase(text: str):
+	# gross, klein, anders = 0, 0, 0
+	gross = 0
+	klein = 0
+	anders = 0
+	for buchstabe in text:
+		if buchstabe.isupper():
+			gross += 1
+		elif buchstabe.islower():
+			klein += 1
+		else:
+			anders += 1
+	print(f"Groß: {gross}, Klein: {klein}, Sonderzeichen: {anders}")
+
+countCase("Das ist der Text")
+countCase("Die Funktion soll zusätzlich zählen wie viele Sonderzeichen (Nummern inkludiert) enthalten sind und das")
