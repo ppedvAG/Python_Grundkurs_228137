@@ -1,4 +1,5 @@
 import random
+import time
 
 # Schleife
 
@@ -155,14 +156,24 @@ for l in verschachtelt:  # 3 Durchgänge
 
 # Übung 1:
 # Stoppuhr
-# Bevor die Minute hochtickt, müssen die Sekunden einmal eine vollkommenen Umdrehung hinter sich gebracht haben
+# Bevor die Minute hochtickt, müssen die Sekunden einmal eine vollkommene Umdrehung hinter sich gebracht haben
 # time.sleep(Float) Funktion hier nützlich
+for min in range(0, 60):
+	for sec in range(0, 60):
+		time.sleep(1)
+		print(f"{sec}:{min}")
 
 # Übung 2:
 # Erstelle eine Schleife die das kleine Einmaleins von 1 bis 10 berechnet, und jeden einzelnen
 # Schritt in der Konsole ausgibt
 # "1 x 1 = 1"
+# "1 x 2 = 2"
 # ...
 # "5 x 5 = 25"
 # ...
+# "7 x 4 = 28"
+# ...
 # "10 x 10 = 100"
+for zahl1 in range(1, 11):
+	for zahl2 in range(1, 11):
+		print(f"{zahl1}x{zahl2}={zahl1 * zahl2}")
