@@ -1,3 +1,5 @@
+import random
+
 # Schleife
 
 # for Schleife
@@ -93,6 +95,15 @@ for i in range(0, 20):
 # ...
 # 14
 # FizzBuzz
+for i in range(1, 100):
+	if i % 3 == 0 and i % 5 == 0:
+		print("FizzBuzz")
+	elif i % 3 == 0:
+		print("Fizz")
+	elif i % 5 == 0:
+		print("Buzz")
+	else:
+		print(i)
 
 # Übung 2
 # Schreibe eine Schleife die dir alle Zahlen von 1 bis 200 zur Verfügung stellt
@@ -100,3 +111,58 @@ for i in range(0, 20):
 # Zahl + Endung 'st', 'nd', 'rd' oder 'th'
 # 1st, 2nd, 3rd, 4th, ..., 21st, 22nd, 23rd, 24th
 # Bonus: Berücksichtige alle Zahlen die mit 11, 12 oder 13 enden
+for i in range(1, 200):
+	if i % 100 == 11 or i % 100 == 12 or i % 100 == 13:
+		print(f"{i}: {i}th")
+	elif i % 10 == 1:
+		print(f"{i}: {i}st")
+	elif i % 10 == 2:
+		print(f"{i}: {i}nd")
+	elif i % 10 == 3:
+		print(f"{i}: {i}rd")
+	else:
+		print(f"{i}: {i}th")
+
+# While Schleife
+# Läuft solange die Bedingung True ist
+# Braucht meistens einen externen Zähler
+i = 0
+while i < 10:
+	print(i)
+	i += 1
+else:
+	print("Schleife fertig")
+
+# Endlosschleife, wird häufig mit break beendet
+# Random: Externe Klasse die ermöglicht, Zufallszahlen generieren
+while True:
+	randomZahl = random.randint(0, 100)
+	print(randomZahl)
+	if randomZahl == 99:
+		break
+
+# Verschachtelte Schleifen
+# Schleifen in Schleifen
+verschachtelt = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for l in verschachtelt:  # 3 Durchgänge
+	print(l)
+
+for l in verschachtelt:  # 3 Durchgänge
+	for inner in l:  # 3 Durchgänge
+		print(inner)  # Insgesamt 3*3=9 Durchgänge
+		if inner == 5:
+			break  # break und continue beenden die innere Schleife
+
+# Übung 1:
+# Stoppuhr
+# Bevor die Minute hochtickt, müssen die Sekunden einmal eine vollkommenen Umdrehung hinter sich gebracht haben
+# time.sleep(Float) Funktion hier nützlich
+
+# Übung 2:
+# Erstelle eine Schleife die das kleine Einmaleins von 1 bis 10 berechnet, und jeden einzelnen
+# Schritt in der Konsole ausgibt
+# "1 x 1 = 1"
+# ...
+# "5 x 5 = 25"
+# ...
+# "10 x 10 = 100"
