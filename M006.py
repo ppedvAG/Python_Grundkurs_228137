@@ -2,7 +2,7 @@
 # Code der wiederverwendet werden kann
 # Beispiele: print(...), len(...), str.split(...)
 
-# Wir können auch eigene Funktion definieren
+# Wir können auch eigene Funktion definieren mit dem def Keyword (define)
 # Funktionen für Wiederverwendbarkeit innerhalb der Codebasis
 # Syntax:
 # def <Name>(Optional: Parameter1, Parameter2, ...):
@@ -107,7 +107,7 @@ addiere(*intList)
 # Und uns die größte dieser Zahlen zurückgibt
 
 # Übung 2:
-# Wir wollen eine Funktion erstellen, die einen String als Paramter erhält
+# Wir wollen eine Funktion erstellen, die einen String als Parameter erhält
 # Die Funktion soll dann in der Konsole ausgeben, aus wie vielen Klein- und Großbuchstaben der String besteht
 # Die Funktion soll zusätzlich zählen wie viele Sonderzeichen (Nummern inkludiert) enthalten sind und das
 # ebenfalls ausgeben
