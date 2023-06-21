@@ -71,8 +71,32 @@ with open("test.txt", "r") as file:
 normal = "C:\\Users\\lk3\\source\\repos\\Python_Grundkurs_2023_06_19"
 rstring = r"C:\Users\lk3\source\repos\Python_Grundkurs_2023_06_19"
 
-# Übung:
+# Übung 1:
 # Funktion die dem User die Möglichkeiten (w, r, a) gibt
 # User soll eine davon auswählen über input()
 # Wenn der User keine valide Möglichkeit eingibt, soll die Eingabe wiederholt werden
 # Danach soll einfach das File geöffnet werden
+
+# Funktionsdefinition
+# Abfrage der Eingabe des Users
+# Überprüfung der Eingabe auf w, r oder a
+# Wenn der User w, r oder a eingegeben hat, dann open
+# Wenn keine valide Eingabe -> Wiederholen (while True)
+def auswahl():
+	while True:  # Endlosschleife bis der User etwas korrektes eingibt
+		# if choice == "w" or choice == "r" or choice == "a":
+		choice = input("Gib w, r oder a ein: ")
+		if choice in ["w", "r", "a"]:  # in statt if/or
+			break
+	print("Valide Eingabe, File wird geöffnet")
+	return open("Test.txt", choice)
+
+auswahl()
+
+# Übung 2:
+# Erstelle ein Programm, das zwei Integer oder Floats abfragt
+# Gib dem Nutzer die Möglichkeit per Tastendruck zwischen Addition, Subtraktion, Multiplikation und Division zu wählen.
+# -> Zahl zwischen 1 und 4 -> Rechenoperation auswählen
+# Bei Ungültiger Eingabe soll der Benutzer erneut nach seiner Entscheidung gefragt werden.
+# Lasse das Ergebnis inklusive der Rechnung in der Konsole ausgeben
+# Frage nach Ende der Operation ob der Benutzer eine neue Rechnung durchführen will
