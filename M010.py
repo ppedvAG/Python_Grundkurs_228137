@@ -15,7 +15,7 @@ class Lebewesen:
 	# __str__
 	# Gibt eine Stringrepräsentation von dem Objekt zurück
 	def __str__(self):
-		return f"Das Lebewesen ist {self.alter} Jahre alt"
+		return f"{type(self).__name__} ist {self.alter} Jahre alt"
 
 class Mensch(Lebewesen):  # In der Klammer eine Vererbungshierarchie herstellen (Mensch ist ein Lebewesen)
 	def __init__(self, alter: int, name: str):
@@ -43,4 +43,9 @@ print([1, 2, 3])  # Hier wurde auch die __str__ Funktion überschrieben
 #     - Flugzeug
 # 2. Füge jeweils eine neue passende Eigenschaft hinzu
 # 3. Überschreibe die Beschreibungs-Funktion der Basis-Klasse um auch die neuen Eigenschaften wiederzugeben
-# 4. Erstelle jeweils eine Instanz der Klassen und nutze die Beschreibungs Funktionen
+# 4. Erstelle jeweils eine Instanz der Klassen und nutze die Beschreibungs Funktionens
+
+testListe = [Lebewesen(12), Mensch(23, "123")]
+for x in testListe:
+	if isinstance(x, Lebewesen):
+		print(f"{x} ist ein Lebewesen")
