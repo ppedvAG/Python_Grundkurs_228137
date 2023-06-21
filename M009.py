@@ -93,15 +93,15 @@ for p in personenListe:
 
 # Übung 1:
 # 1. Erstelle eine Fahrzeug-Klasse
-# 2. Diese Klasse soll typische Eigenschaften eines Fahrzeuges enthalten:
+# 2. Diese Klasse soll typische Eigenschaften eines Fahrzeuges enthalten: (in __init__)
 #     - Fahrzeug-Name
 #     - Preis
 #     - Maximale Geschwindigkeit
 #     - Derzeitige Geschwindigkeit
 #     - Motorzustand (An/Aus)
 # 3. Die Klasse soll auch folgende Methoden enthalten:
-#     - Beschleunigen(Erhöhe bzw Verringere die Derzeitige Geschwindigkeit aber übersteige nicht das Maximum)
-#     - StarteMotor
-#     - StoppeMotor
+#     - Beschleunigen (Erhöhe bzw Verringere die Derzeitige Geschwindigkeit aber übersteige nicht das Maximum) -> Parameter int (Wieviel soll beschleunigt werden)
+#     - StarteMotor (Setze Motorzustand auf True, funktioniert nur wenn das Auto noch nicht gestartet ist)
+#     - StoppeMotor (Motor kann nur gestoppt werden, wenn das Auto nicht fährt)
 #     - Beschreibung (Gibt alle Informationen über die Klasse wieder)
-# 4. Erstelle eine Instanz der Klasse und nutze die Beschreibungs Funktion
+# 4. Erstelle eine Instanz der Klasse und nutze die Beschreibungs Funktion (Konkrete Werte)
