@@ -90,3 +90,18 @@ personenListe.append(Person("Richard", "König"))
 
 for p in personenListe:
 	print(f"Es ist {p.vorname} {p.nachname} im Raum")
+
+# Übung 1:
+# 1. Erstelle eine Fahrzeug-Klasse
+# 2. Diese Klasse soll typische Eigenschaften eines Fahrzeuges enthalten:
+#     - Fahrzeug-Name
+#     - Preis
+#     - Maximale Geschwindigkeit
+#     - Derzeitige Geschwindigkeit
+#     - Motorzustand (An/Aus)
+# 3. Die Klasse soll auch folgende Methoden enthalten:
+#     - Beschleunigen(Erhöhe bzw Verringere die Derzeitige Geschwindigkeit aber übersteige nicht das Maximum)
+#     - StarteMotor
+#     - StoppeMotor
+#     - Beschreibung (Gibt alle Informationen über die Klasse wieder)
+# 4. Erstelle eine Instanz der Klasse und nutze die Beschreibungs Funktion
